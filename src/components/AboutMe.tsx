@@ -1,14 +1,13 @@
-import { motion } from "framer-motion";
+import useInView from "@/hooks/use-in-view";
 
 const AboutMe = () => {
+  const { ref, inView } = useInView();
+
   return (
     <section className="px-6 py-8">
-      <motion.div
-        className="max-w-3xl mx-auto bg-card/80 backdrop-blur-sm rounded-lg p-8 shadow-soft"
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
-        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      <div
+        ref={ref}
+        className={`max-w-3xl mx-auto bg-card/80 backdrop-blur-sm rounded-lg p-8 shadow-soft reveal ${inView ? "is-visible" : ""}`}
       >
         <div className="section-heading">
           <h2 className="font-display text-accent-foreground">Sobre mim</h2>
@@ -22,7 +21,7 @@ const AboutMe = () => {
           pensadas para quem valoriza cada detalhe da sua rotina teocrática,
           escolar e de escritório.
         </p>
-      </motion.div>
+      </div>
     </section>
   );
 };
