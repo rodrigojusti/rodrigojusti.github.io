@@ -11,7 +11,7 @@ export const products: Product[] = [
   },
   {
     name: "Bloco de Cartas para Testemunho",
-    type: "cartas",
+    type: "papel_de_carta",
     desc: "Capa com papel liso, personalizada com nome e interior com papel pautado para escrita de texto manuscrito, com decorações florais",
     price: "R$ 1",
     image: "https://raw.githubusercontent.com/rodrigojusti/rodrigojusti.github.io/refs/heads/main/static/bloco_cartas.png",
@@ -19,7 +19,7 @@ export const products: Product[] = [
   },
   {
     name: "Agenda para Anotações de Testemunho",
-    type: "cartas",
+    type: "agendas",
     desc: "Capa dura plastificada, personalizada com nome e interior com papel 75g com informações auxiliares para testemunho",
     price: "R$ 1",
     image: "https://raw.githubusercontent.com/rodrigojusti/rodrigojusti.github.io/refs/heads/main/static/agenda_pregacao_a6.png",
